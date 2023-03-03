@@ -1,2 +1,1 @@
-# Repositorio Grupo ALFA
-Presentación práctica clase 4
+# GRUPO ALFA
