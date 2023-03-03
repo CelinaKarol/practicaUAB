@@ -1,2 +1,2 @@
-# practicaUAB
-Grupo Alfa: Presentación práctica clase 4
+# Repositorio Grupo ALFA
+Presentación práctica clase 4
