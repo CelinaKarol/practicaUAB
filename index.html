@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/icon.png">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>VETERINARIA COLAS Y MORDISCOS</title>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary menu-vet">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">COLAS Y MORDISCOS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,41 +42,32 @@
             </div>
         </div>
     </nav>
-
-    <div class="container mt-5 mx-auto col-12">
-        <div class="card border-primary text-center">
-            <div class="card-header">
-                <h2> Bienvenido</h2>
-            </div>
-            <div class="card-body">
-                <div class="row">
+    <div class="container">
+        <div class="contenido">    
+            <video poster="poster.jpg" autoplay playsinline muted loop>
+                <source src="./video/background.mp4" type="video/mp4">
+            </video>
+        </div>   
+        <div>
+            <div class="row mt-4 align-items-center">
+                <div class="col-lg-6 my-auto mx-auto mt-5">
+                   <h1 class="display-1 titulo" >Colas y Mordiscos</h1>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex">
+                        <span class="my-auto mx-auto">
+                            <a href="servicios.html" class="btn btn-primary">Ver Servicios</a>
+                            <a href="tienda.html" class="btn btn-primary">Ver Tienda</a>
+                        </span>
+                    </div>                 
                     
-                        <div class="col-lg-6">
-                            <img width="100%" class="img-responsive" src="./img/back.jpg" alt="">
-                            
-                        </div>
-                        <div class="col-lg-6 ">
-                            <h2 class="card-title mt-5 text-primary">VETERINARIA </h2>
-                            <h1 class="text-primary">COLAS Y MORDISCOS</h1>
-                            <blockquote class="blockquote">
-                                <p class="align-middle">Estamos para servirte y ayudarte con el cuidado de tu mascota. No importa la raza o edad, nosotros tenemos la mejor solución a precios más accesibles.</p>
-                              
-                              </blockquote>
-                              <button type="button" class="btn btn-primary btn-lg">Ver Más</button>
-                        </div>  
-                       
-                </div>  
-                  
-                     
-            </div>
-              <div class="card-body">
-                <h3>GRUPO ALFA</h3>
-                <h5>Presidente: Ariel Espinoza</h5>
-                <h5>Secretiaria: Celina Aruquina</h5>
-                
-              </div>
-        </div> 
-    </div>    
-
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    
+    <script src="./js/words.js"></script>
   </body>
 </html>
