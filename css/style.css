@@ -14,7 +14,7 @@ video {
 }
 
 .titulo{
-    color: #fff;	
+    color: #E95420;	
 	text-align: left;
 	padding: 0;
 	margin: 0;
@@ -22,6 +22,7 @@ video {
 	transform: translateX(-200%);
 	opacity: 0;
 	animation: slide-in-anim 1.5s ease-out forwards;
+	text-shadow: 0 0 5px black;
 }
 
 @keyframes slide-in-anim {
@@ -49,6 +50,7 @@ video {
 	transform: translateX(-200%);
 	opacity: 0;
 	animation: slide-in-anim-des 1.5s ease-out forwards;
+	text-shadow: 0 0 5px black;
 }
 
 @keyframes slide-in-anim-des {
@@ -65,4 +67,9 @@ video {
 		opacity: 1;
 		transform: translateX(-50%);
 	}
+}
+
+.cortina{
+	background-color: black;
+	opacity: 0.5;
 }
