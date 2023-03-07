@@ -1,0 +1,21 @@
+.img-display {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-img {
+  height: 500x;
+  width: 100%;
+}
+
+.container.container-body {
+  background-color: #E95420;
+  padding: 50px;
+  border-radius: 50px;
+  margin: 50px;
+}
+.container.container-body div {
+  color: aliceblue;
+}/*# sourceMappingURL=servicio.css.map */
