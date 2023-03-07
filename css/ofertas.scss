@@ -1,0 +1,64 @@
+.card{
+    background-color: rgb(255, 252, 248);
+    border-color: rgb(255, 72, 0);
+}
+.btn{
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 300px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: rgb(255, 72, 0);
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid rgb(255, 72, 0);
+    margin-bottom: 10px;
+    z-index: 0;
+    font-weight: 700;
+    
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        background-color: rgb(255, 72, 0);
+        transition: all 500ms ease;
+        z-index: -1;
+    }
+    &--1::before{
+        width: 0;
+        height: 100%;
+    }
+    &--1:hover{
+        background-color: rgb(255, 72, 0);
+        color:white;
+        
+        &::before{
+            width: 100%;
+        }
+    }
+    &--2{
+        background-color: rgb(255, 72, 0);
+        color: white;
+    }
+    &--2:hover{
+        animation: shadow-pulse 500ms 1;
+        background-color: rgb(255, 72, 0);
+        color: white;
+        
+    }
+}
+
+@keyframes shadow-pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgb(204, 59, 1);
+    }
+    100%{
+        box-shadow: 0 0 4px 4px rgb(255, 72, 0);
+    }
+}
