@@ -1,10 +1,11 @@
-.card{
+.card {
+    text-align: center;
     background-color: rgb(255, 252, 248);
     border-color: rgb(255, 72, 0);
 }
-.btn{
+
+.btn {
     position: relative;
-    display: block;
     height: 50px;
     width: 300px;
     border-radius: 4px;
@@ -14,12 +15,13 @@
     overflow: hidden;
     transition: all 500ms ease;
     border: 2px solid rgb(255, 72, 0);
+    border-radius: 10px;
     margin-bottom: 10px;
     z-index: 0;
     font-weight: 700;
-    
 
-    &::before{
+
+    &::before {
         content: '';
         position: absolute;
         left: 0;
@@ -30,35 +32,62 @@
         transition: all 500ms ease;
         z-index: -1;
     }
-    &--1::before{
+
+    &--1::before {
         width: 0;
         height: 100%;
     }
-    &--1:hover{
+
+    &--1:hover {
         background-color: rgb(255, 72, 0);
-        color:white;
-        
-        &::before{
+        color: white;
+
+        &::before {
             width: 100%;
         }
     }
-    &--2{
+
+    &--2 {
         background-color: rgb(255, 72, 0);
         color: white;
     }
-    &--2:hover{
+
+    &--2:hover {
         animation: shadow-pulse 500ms 1;
         background-color: rgb(255, 72, 0);
         color: white;
-        
+
     }
 }
 
-@keyframes shadow-pulse{
-    0%{
+@keyframes shadow-pulse {
+    0% {
         box-shadow: 0 0 0 0 rgb(204, 59, 1);
     }
-    100%{
+
+    100% {
         box-shadow: 0 0 4px 4px rgb(255, 72, 0);
+    }
+}
+
+.card{
+    $sm: 280px;
+    $md: 896px;
+    $lg: 1280px;
+    @media screen and (min-width: $sm) and (max-width: $md) {
+        
+        .btn {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    @media screen and (min-width: $md) and (max-width: $lg) {
+        .btn {
+            width: max-content;
+            height: auto;
+        }
+        
+
     }
 }
