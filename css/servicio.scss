@@ -1,4 +1,6 @@
 $color-primary:#E95420;
+$color-secundary:#f9bca5;
+$color-tercero:#f6ff00;
 .img-display{
     width: 100%;
   height: 100%;
@@ -25,3 +27,66 @@ $color-primary:#E95420;
     }
 
 }
+.card-text{
+  color: black;
+}
+.card{
+  width: 100; margin: 30px; align-items: center;
+}
+
+.container.container-body{
+
+  
+  $small: 300px;
+  $medium: 900px;
+  $large: 1200px;
+  
+  @media screen and (min-width: $small) and (max-width: $medium) {
+   
+        background-color: aliceblue;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+      .card{
+        border-radius: 30px;
+        width: 100; 
+        margin: 50px; 
+        padding: 5px;
+        align-items: center;
+        background-color:$color-secundary;
+        img{
+          padding: 10px;
+        }
+        button{
+          background-color: purple;
+        }
+      }
+  }
+
+  @media screen and (min-width: $medium) and (max-width: $x) {
+   
+    background-color: orange;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+  .card{
+    border-radius: 30px;
+    width: 100; 
+    margin: 50px; 
+    padding: 5px;
+    align-items: center;
+    background-color:$color-tercero;
+    img{
+      padding: 10px;
+    }
+    button{
+      background-color: $color-primary;
+    }
+  }
+}
+
+}
+
+
+
+
