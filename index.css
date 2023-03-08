@@ -63,12 +63,13 @@ $medium: 900px;
     background-color: purple;
   }
 }
-@media screen and (min-width: 900px) and (max-width: 992px) {
+@media screen and (min-width: 900px) and (max-width: 1200px) {
   .container.container-body {
     background-color: orange;
-    border-radius: 0px;
-    padding: 0px;
-    margin: 0px;
+    border-radius: 50x;
+    padding: 50px;
+    margin: 10px;
+    color: #E95420;
   }
   .container.container-body .card {
     border-radius: 30px;
