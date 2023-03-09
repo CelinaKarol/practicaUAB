@@ -1,11 +1,11 @@
 .card {
+  text-align: center;
   background-color: rgb(255, 252, 248);
   border-color: rgb(255, 72, 0);
 }
 
 .btn {
   position: relative;
-  display: block;
   height: 50px;
   width: 300px;
   border-radius: 4px;
@@ -15,6 +15,7 @@
   overflow: hidden;
   transition: all 500ms ease;
   border: 2px solid rgb(255, 72, 0);
+  border-radius: 10px;
   margin-bottom: 10px;
   z-index: 0;
   font-weight: 700;
@@ -57,5 +58,18 @@
   }
   100% {
     box-shadow: 0 0 4px 4px rgb(255, 72, 0);
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 896px) {
+  .card .btn {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (min-width: 896px) and (max-width: 1280px) {
+  .card .btn {
+    width: -moz-max-content;
+    width: max-content;
+    height: auto;
   }
 }/*# sourceMappingURL=ofertas.css.map */
