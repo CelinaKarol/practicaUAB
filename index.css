@@ -91,4 +91,22 @@ $medium: 900px;
   .container.container-body .card button {
     background-color: #E95420;
   }
+}
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+  .container-galeria {
+    background-color: #F4DBFA;
+  }
+  .container-galeria .row {
+    padding: 5px;
+  }
+  .container-galeria .row .card {
+    background-color: #E95420;
+  }
+  .container-galeria .row .card .card-title {
+    color: #f9bca5;
+  }
+  .container-galeria .row .card .card-text {
+    color: white;
+  }
 }/*# sourceMappingURL=index.css.map */

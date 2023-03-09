@@ -1,0 +1,23 @@
+@import './colors.scss';
+.container-galeria{
+    $small: 300px;
+    $medium: 900px;
+    //$large: 1200px;
+   
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        background-color:$color-pink;
+        .row{
+            padding: 5px;
+            .card{
+                background-color:$color-primary;
+                .card-title{
+                    color:$color-secundary
+                }
+                .card-text{
+                    color:$color-white
+                }
+            }
+            
+        }
+    }
+}
