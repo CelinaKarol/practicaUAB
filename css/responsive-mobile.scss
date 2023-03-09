@@ -1,0 +1,53 @@
+.container.container-body{
+
+  
+    $small: 300px;
+    $medium: 900px;
+    $large: 1200px;
+    
+    @media screen and (min-width: $small) and (max-width: $medium) {
+     
+          background-color: aliceblue;
+          border-radius: 0px;
+          padding: 0px;
+          margin: 0px;
+        .card{
+          border-radius: 30px;
+          width: 100; 
+          margin: 50px; 
+          padding: 5px;
+          align-items: center;
+          background-color:$color-secundary;
+          img{
+            padding: 10px;
+          }
+          button{
+            background-color: purple;
+          }
+        }
+    }
+  
+    @media screen and (min-width: $medium) and (max-width: $large) {
+     
+      background-color: orange;
+      border-radius: 50x;
+      padding: 50px;
+      margin: 10px;
+      color:$color-primary;
+    .card{
+      border-radius: 30px;
+      width: 100; 
+      margin: 50px; 
+      padding: 5px;
+      align-items: center;
+      background-color:$color-tercero;
+      img{
+        padding: 10px;
+      }
+      button{
+        background-color: $color-primary;
+      }
+    }
+  }
+  
+  }
