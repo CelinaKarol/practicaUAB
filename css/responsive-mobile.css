@@ -1,46 +1,3 @@
-/* $small: 300px;
-$medium: 900px;
-@media screen and (min-width: $small) and (max-width: $medium) {
-    body{
-      background-color: aliceblue;
-    }
-    .card{
-      width: 100; margin: 10px; align-items: center;
-      color: aqua;
-    }
-  } */
-.img-display {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.container-img {
-  height: 500x;
-  width: 100%;
-}
-
-.container.container-body {
-  background-color: #E95420;
-  padding: 50px;
-  border-radius: 50px;
-  margin: 50px;
-}
-.container.container-body div {
-  color: aliceblue;
-}
-
-.card-text {
-  color: black;
-}
-
-.card {
-  width: 100;
-  margin: 30px;
-  align-items: center;
-}
-
 @media screen and (min-width: 300px) and (max-width: 900px) {
   .container.container-body {
     background-color: aliceblue;
@@ -91,4 +48,4 @@ $medium: 900px;
   .container.container-body .card button {
     background-color: #E95420;
   }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=responsive-mobile.css.map */
